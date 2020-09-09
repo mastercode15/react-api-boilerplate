@@ -1,10 +1,10 @@
 import React from 'react';
-import ArticleList from '../components/ArticleList';
-import { useArticleList } from '../data/useArticleList';
+import ArticleList from '../components/SubjectsList';
+import { useSubjectsList } from '../data/useSubjectsList';
 import ShowError from '../components/ShowError';
 
 const HomePage = () => {
-  const articles = useArticleList();
+  const articles = useSubjectsList();
 
   return (
     <>

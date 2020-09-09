@@ -2,7 +2,8 @@ import React from 'react';
 const AboutPage = () => (
   <>
     <h1 className='title'>
-      About Page
+      Aqui va la prueba de nuestra API
+
     </h1>
   </>
 );

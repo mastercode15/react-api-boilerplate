@@ -27,6 +27,7 @@ const AsyncPrivate = loadable( () => import( '../pages/Private' ), loadableOptio
 const AsyncArticles = loadable( () => import( '../pages/Articles' ), loadableOptions );
 const AsyncArticle = loadable( () => import( '../pages/Article' ), loadableOptions );
 const AsyncAbout = loadable( () => import( '../pages/About' ), loadableOptions );
+const AsyncProfile = loadable( () => import( '../pages/Profile' ), loadableOptions );
 const AsyncLogout = loadable( () => import( '../pages/Logout' ), loadableOptions );
 
 
@@ -52,7 +53,7 @@ const AppRouter = () => (
     <PrivateRoute path={ Routes.PRIVATE } component={ AsyncPrivate } />
     <PrivateRoute path={ Routes.ARTICLE_ID } component={ AsyncArticle } />
     <PrivateRoute path={ Routes.LOGOUT } component={ AsyncLogout } />
-
+    <PrivateRoute path={ Routes.PROFILE } component={ AsyncProfile } />
     <Route component={ NotFoundPage } />
   </Switch>
 );

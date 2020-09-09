@@ -4,11 +4,11 @@
 import useSWR from 'swr';
 import API from './index';
 
-export const useArticleList = () => {
-  const { data, error, mutate } = useSWR( '/articles', API.fetcher );
+export const useSubjectsList = () => {
+  const { data, error, mutate } = useSWR( '/subjects', API.fetcher );
 
   return {
-    articles: data && data.data,
+    subjects: data && data.data,
     isLoading: !error && !data,
     isError: error,
     mutate
